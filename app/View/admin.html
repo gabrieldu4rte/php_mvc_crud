@@ -1,0 +1,24 @@
+
+<link rel="stylesheet" href="app/Template/style.css">
+
+<h1>Gerenciador de Conteúdo</h1>
+<a id="create_post" href="http://localhost/php_crud_mvc/?pagina=admin&metodo=create">Criar Publicação</a><br><br>
+<hr>
+<br><table border="2">
+    <tr>
+        <th>ID</th>
+        <th>TITULO</th>
+        <th>ALTERAÇÃO</th>
+        <th>DELEÇÃO</th>
+    </tr>
+    <tr>
+    {% for postagem in postagens %}
+        <th>{{postagem.id}}</th>
+        <th>{{postagem.titulo}}</th>
+        <th>ALTERAÇÃO</th>
+        <th>DELEÇÃO</th>
+    </tr>
+    {% endfor %}
+    
+</table>
+
