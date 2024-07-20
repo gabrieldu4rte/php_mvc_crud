@@ -13,7 +13,7 @@ class Core{
         }
 
         if(!class_exists($controller)){
-            $controller = 'ErroController';
+            $controller = 'ErrorController';
 
         }
 

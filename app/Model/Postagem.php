@@ -30,6 +30,8 @@ public static function selecionaPorId($idPost){
 
     if(!$resultado){
         throw new Exception('Não foi encontrado nenhum regristro');
+    } else {
+        $resultado->comentarios = Comentario::selecionarComentarios($resultado->id);
     }
     return $resultado;
 }
