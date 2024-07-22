@@ -9,6 +9,21 @@
         <br>
         <hr>
         <br>
+
+        <form method="post" action="http://localhost/php_crud_mvc/?pagina=post&metodo=addComent">
+            <span>Nome:</span><br>
+            <input type="text" name="nome"><br><br>
+
+            <span>Comentário:</span><br>
+            <textarea name="msg"></textarea><br><br>
+
+            <input type="hidden" name="id" value="{{id}}">
+
+            <input type="submit" value="enviar">
+        </form>
+        <br>
+        <br>
+
         {% if comentarios == false %}
             <p>Nenhum comentário nesta postagem</p>
         {% else %}

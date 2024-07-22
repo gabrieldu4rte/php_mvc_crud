@@ -59,4 +59,41 @@ public static function insert($dadosPost){
     return true;
 }
 
+public static function update($params)
+		{
+			$con = Connection::getConn();
+
+			$sql = "UPDATE postagem SET titulo = :tit, conteudo = :cont WHERE id = :id";
+			$sql = $con->prepare($sql);
+			$sql->bindValue(':tit', $params['titulo']);
+			$sql->bindValue(':cont', $params['conteudo']);
+			$sql->bindValue(':id', $params['id']);
+			$resultado = $sql->execute();
+
+			if ($resultado == 0) {
+				throw new Exception("Falha ao alterar publicação");
+
+				return false;
+			}
+
+			return true;
+		}
+
+
+public static function delete($id){
+    $con = Connection::getConn();
+
+			$sql = "DELETE FROM postagem WHERE id = :id";
+			$sql = $con->prepare($sql);
+            $sql->bindValue(':id', $id);
+			$resultado = $sql->execute();
+
+			if ($resultado == 0) {
+				throw new Exception("Falha ao deletar publicação");
+
+				return false;
+			}
+
+			return true;
+}
 }

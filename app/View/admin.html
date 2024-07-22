@@ -15,8 +15,8 @@
     {% for postagem in postagens %}
         <th>{{postagem.id}}</th>
         <th>{{postagem.titulo}}</th>
-        <th>ALTERAÇÃO</th>
-        <th>DELEÇÃO</th>
+        <th><a href="http://localhost/php_crud_mvc/?pagina=admin&metodo=change&id={{postagem.id}}">ALTERAÇÃO</a></th>
+        <th><a href="http://localhost/php_crud_mvc/?pagina=admin&metodo=delete&id={{postagem.id}}">DELEÇÃO</a></th>
     </tr>
     {% endfor %}
     
