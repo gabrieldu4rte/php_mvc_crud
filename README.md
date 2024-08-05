@@ -1,6 +1,6 @@
 <h1>PHP MVC</h1>
-<p>Página sobre da aplicação em PHP utilizando o padrão de projeto de software MVC.</p>
+<p>Application about page in PHP using the MVC software design pattern.</p>
 <br>
-<p>MVC é o acrônimo de Model-View-Controller (em português: Arquitetura Modelo-Visão-Controle - MVC) é um padrão de projeto de software, ou padrão de arquitetura de software formulado na década de 1970,focado no reuso de código e a separação de conceitos em três camadas interconectadas, onde a apresentação dos dados e interação dos usuários (front-end) são separados dos métodos que interagem com o banco de dados (back-end).</p>
+<p>MVC is the acronym for Model-View-Controller, a software design pattern, or software architecture pattern formulated in the 1970s, focused on code reuse and the separation of concepts into three interconnected layers, where the presentation of data and user interaction (front-end) are separated from the methods that interact with the database (back-end).</p>
 <br>
-<p>O projeto tem como foco o estudo desse padrão de projeto, e sua utilização com PHP, desenvolvendo um sistema de gerenciamento de postagens, com comentários.</p>
+<p>The project focuses on studying this design pattern, and its use with PHP, developing a post management system, with comments.</p>
